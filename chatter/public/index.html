@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chatter</title>
+  </head>
+  <body>
+    <div class="m-auto w-50">
+      <header class="join-header">
+        <h1>Chattter</h1>
+      </header>
+      <main class="join-main">
+        <form action="chat.html">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input
+              type="text"
+              name="username"
+              class="form-control"
+              id="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="room">Room</label>
+            <select class="form-select" name="room" id="room">
+              <option value="General">General</option>
+              <option value="Sports">Sports</option>
+              <option value="SRM">SRM</option>
+              <option value="Hostel">Hostel</option>
+              <option value="Homeword">Homeword</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-dark">Join Chat</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
